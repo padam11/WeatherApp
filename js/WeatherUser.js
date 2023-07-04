@@ -1,4 +1,4 @@
-class UserInterface {
+export class UserInterface {
     constructor() {
       this.showData = document.getElementById('data');
     }
