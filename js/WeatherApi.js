@@ -1,6 +1,6 @@
 class Weather {
     constructor() {
-      this.apiKeys = '1c36715b23ed05789a7db7679968263f';
+      this.apiKeys = '8ab050093f4fbd71760ac840b7660a0c';
     }
     async retrieveWeather(city)
     {
