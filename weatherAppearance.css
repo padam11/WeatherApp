@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Arvo', serif;
 }
 
 ul {
