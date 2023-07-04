@@ -1,7 +1,8 @@
 import { Weather } from './WeatherApi.js'
 import { UserInterface } from './WeatherUser.js'
-const weath = new Weather;
+//const weath = new eather;
 const ui = new UserInterface;
+const weather = new Weather;
 
 const btn = document.getElementById('btn');
 
@@ -9,19 +10,20 @@ btn.addEventListener("click", weatherData);
 
 function weatherData(e)
 {
+
   const city = document.getElementById('city').value;
   e.preventDefault();
-  weath.retrieveWeather(city).then(data => {
-    if (city != '')
+  weather.retrieveWeather(city).then(data => {
+    if (city !== '')
       {
-        if (data.res.message == 'city not found')
+        if (data.resData.message === 'city not found')
           {
             ui.showAlert('City not found', 'alert red');
             ui.clearInput();
           }
         else
           {
-            ui.showUserData(data.res);
+            ui.showUserData(data.resData);
             ui.clearInput();
           }
       }
@@ -31,3 +33,11 @@ function weatherData(e)
       }
   })
 }
+
+
+
+
+
+
+
+
